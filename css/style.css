@@ -145,7 +145,7 @@ header{
 /* FIRST SECTION */
 
 main > section{
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 #first-section .my-col{
@@ -196,12 +196,21 @@ main > section{
 
 /* SECOND SECTION */
 
+#second-section .my-row{
+    align-items: flex-end;
+}
+
+#second-section .my-col{
+    padding: 0 20px;
+}
+
 #second-section img{
     width: 100%;
 }
 
 #second-section .my-col:first-child img{
     padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 #second-section p{
@@ -313,7 +322,7 @@ main > section{
 
 #four-section h2:first-of-type{
     color: white;
-    padding: 30px 0;
+    padding: 40px 0;
     font-size: 2.2em;
     text-align: center;
 }
@@ -428,6 +437,24 @@ main > section{
     font-weight: bold;
     letter-spacing: 3px;
 }
+
+/* FOOTER */
+
+footer{
+    background-color: #333333;
+    color: white;
+    text-align: center;
+}
+
+footer p{
+    padding: 40px 15px;
+}
+
+footer p > a{
+    text-decoration: underline;
+    color: var(--color-purple);
+}
+
 /* MEDIA QUERY */
 
 /* Tablet */
@@ -445,20 +472,10 @@ main > section{
         justify-content: space-around;
     }
 
-   #second-section .my-row .my-col-50:first-child{
+   /* #second-section .my-row .my-col-50:first-child{
     padding-top: 10rem;
-   }
+   } */
 
-   /* #second-section .my-col:last-child{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-} */
-
-    /* #first-section .my-col-50{
-        width: 50%
-    } */
-    
     #four-section .my-row .my-col-50{
         width: calc((100% / 2) - 20px);
     }
@@ -473,20 +490,23 @@ main > section{
 
     .testimonials-card{
         display: flex;
-        text-align: left;
-        
-        
+        text-align: left;  
     }
 
     .testimonials-text{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 30px;
-        
+        padding-left: 30px;  
     }
 
+    .small-container{
+        width: 50%;
+        margin: 0 auto;
+    }
 }
+
+
 
 /* Desktop */
 
@@ -520,5 +540,10 @@ main > section{
 
     #four-section .my-row .my-col-33{
         width: calc((100% / 3) - 20px);
+    }
+
+    .small-container{
+        width: 30%;
+        margin: 0 auto;
     }
 }
