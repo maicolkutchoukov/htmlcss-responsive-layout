@@ -19,6 +19,7 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 ul, ol{
@@ -76,11 +77,11 @@ a{
 }
 
 .button.store{
-    /* padding: 15px 25px; */
+    padding: 8px 30px;
     background-color: var(--color-blue);
     color: white;
     display: inline-block;
-    width: 70%;
+    /* width: 70%; */
     letter-spacing: 3px;
     text-decoration: none;
     margin-bottom: 30px;
@@ -91,9 +92,9 @@ a{
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 15px 0;
+    padding: 15px 30px;
     display: inline-block;
-    width: 60%;
+    /* width: 60%; */
     margin-bottom: 20px;
     letter-spacing: 3px;
 }
@@ -111,6 +112,9 @@ a{
 header{
     background-color: var(--color-blue);
     padding: var(--padding-20) 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 #header-container{
@@ -159,6 +163,7 @@ main > section{
 #first-section .my-col-66 .my-col-50 img{
     width: 60%;
     margin-left: 30px;
+    display: block;
 }
 
 #first-section .my-col-66 .my-col-50:first-child > *{
